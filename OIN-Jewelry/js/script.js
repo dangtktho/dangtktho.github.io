@@ -71,12 +71,14 @@ $(window).on('load', function () {
             speed: 400,
             controls: false,
             pager: false,
+            touchEnabled: false,
         });
         $('.sub-slider').bxSlider({
             // mode: 'fade',
             auto: true,
             controls: false,
             pager: false,
+            touchEnabled: false,
         });
         // $('.sub-slider-1').bxSlider({
         //     minSlides: 4,
