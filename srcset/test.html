@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>srcsetの使い方</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            vertical-align: bottom;
+            max-width: 100%;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .visual{
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>srcsetの使い方</h1>
+    <p>801px以上のときはpc画像(960px400px)を表示、800~641pxまでタブレット用画像(800x400px),640px以下になったらsp画像(640x640px)を表示</p>
+    <div class="visual">
+        <picture>
+            <source media="(min-width:801px)" srcset="img/pc-1.jpg 960w" sizes="100vw"><!-- 960w:PSで作った時の幅 -->
+            <source media="(min-width:641px)" srcset="img/tab-1.jpg 800w" sizes="100vw">
+            <img media="(max-width:640px)" srcset="img/sp-1.jpg 640w" sizes="100vw" src="" alt="">
+        </picture>
+    </div>
+</body>
+</html>

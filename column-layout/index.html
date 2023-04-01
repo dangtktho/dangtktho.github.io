@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>column-layoutとlightboxの実装</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body>
+<h1>column-layout</h1>
+<div class="column-wrapper">
+<div class="box">
+  <p class="photo"><a href="img/01.jpg" data-lightbox="photo"><img src="img/01.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/02.jpg" data-lightbox="photo"><img src="img/02.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/03.jpg" data-lightbox="photo"><img src="img/03.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/04.jpg" data-lightbox="photo"><img src="img/04.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/05.jpg" data-lightbox="photo"><img src="img/05.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/06.jpg" data-lightbox="photo"><img src="img/06.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/07.jpg" data-lightbox="photo"><img src="img/07.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/08.jpg" data-lightbox="photo"><img src="img/08.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/09.jpg" data-lightbox="photo"><img src="img/09.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/10.jpg" data-lightbox="photo"><img src="img/10.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/11.jpg" data-lightbox="photo"><img src="img/11.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/12.jpg" data-lightbox="photo"><img src="img/12.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/13.jpg" data-lightbox="photo"><img src="img/13.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/14.jpg" data-lightbox="photo"><img src="img/14.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/15.jpg" data-lightbox="photo"><img src="img/15.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+<div class="box">
+  <p class="photo"><a href="img/16.jpg" data-lightbox="photo"><img src="img/16.jpg" alt=""></a></p>
+  <p id="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at mollitia sit quod doloribus.</p>
+</div><!-- /.box -->
+</div><!-- /.column-wrapper -->
+
+<!-- <p id="more-btn">もっと見る</p> -->
+
+<div class="button01" id="more-btn">
+  <a href="#">もっと見る</a>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js' integrity='sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==' crossorigin='anonymous'></script>
+<script src="js/lightbox.js"></script>
+<script>
+$(function(){
+  //#more-btn>aをclickしたら
+  $('#more-btn>a').on('click',function(){
+    $('.box:nth-of-type(n+9)').slideToggle(0);
+    //#more-btn>aのテキストを'閉じる'に変える
+  if($(this).text() === 'もっと見る'){
+      $(this).text('閉じる');
+  } else{$(this).text('もっと見る')
+  }
+
+  //clickしたら、ページトップに戻る機能をoff
+  return false;
+  });
+});
+</script>
+
+</body>
+</html>

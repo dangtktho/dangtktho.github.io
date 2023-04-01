@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            vertical-align: bottom;
+            max-width: 100%;
+        }
+        h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+        p{
+            text-align: center;
+            margin: 30px 20px;
+        }
+        .visual{
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>scrsetをbxsliderで動かす</h1>
+    <p>
+        641px以上の時はpc-2.jpg(960px)を表示
+        640以下の時はpc-2.jpg(640px)を表示
+    </p>
+
+    <div class="visual">
+        <div class="bxslider">
+            <picture>
+                <source media="(min-width:641px)" srcset="img/pc-2.jpg 960w" sizes="100vw">
+                <img media="(max-width:640px)" sizes="100vw" srcset="img/sp-2.jpg" src="" alt="">
+            </picture>
+            <picture>
+                <source media="(min-width:641px)" srcset="img/pc-1.jpg 960w" sizes="100vw">
+                <img media="(max-width:640px)" sizes="100vw" srcset="img/sp-1.jpg" src="" alt="">
+            </picture>
+        </div>
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' integrity='sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==' crossorigin='anonymous'></script>
+
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(function(){
+            $('.bxslider').bxSlider();
+        });
+    </script>
+</body>
+</html>
