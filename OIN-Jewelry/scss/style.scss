@@ -884,6 +884,9 @@ footer{
     // align-content: space-around;
     .item-wrapper{
         width: 28%;
+        h3{
+            text-align: center;
+        }
         a{
             color: $color_txt;
         }
