@@ -165,7 +165,11 @@ body{
             transform: rotate(90deg);
         }
     }
-
+    @include tab{
+        #ham-btn{
+            margin-left: 20px;
+        }
+    }
 }//ここまでheader-wrapper
 
 
@@ -413,6 +417,17 @@ body{
     }
 
      }
+    @include sp{
+        width: 80%;
+        li{
+            width: 90%;        
+            margin: 20px auto;
+            // background-color: #e64040;
+            a{
+                font-size: 18px; 
+            }
+        }
+    }
 }
 
 //main-visual
