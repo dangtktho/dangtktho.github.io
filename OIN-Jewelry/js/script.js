@@ -1,4 +1,6 @@
 $(function(){
+  //footer
+  
   //clickイベント
         $('#ham-btn').on('click',function(){
         $(this).toggleClass('is-active');

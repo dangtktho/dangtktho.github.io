@@ -152,7 +152,7 @@ body{
         }
     } 
     #ham-btn.is-active>span{
-        // pointer-events: none;
+        // pointer-events: none;//hover無効にする！
         // background-color: transparent;
         width: 30px;
         transform: rotate(45deg);
@@ -165,7 +165,17 @@ body{
             transform: rotate(90deg);
         }
     }
-    
+    @include tb{
+        #ham-btn{
+            pointer-events: none;//hover無効にする！
+        }
+    }
+    @include sp{
+        #ham-btn{
+            pointer-events: none;//hover無効にする！
+        }
+    }
+
 
 }//ここまでheader-wrapper
 
@@ -1069,7 +1079,6 @@ footer{
  span {
   position: relative;
   z-index: 1;
- 
 }
 }
 
