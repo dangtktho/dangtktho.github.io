@@ -167,15 +167,11 @@ body{
     }
     @include tb{
         #ham-btn{
+            &:hover{
             pointer-events: none;//hover無効にする！
+            }
         }
     }
-    @include sp{
-        #ham-btn{
-            pointer-events: none;//hover無効にする！
-        }
-    }
-
 
 }//ここまでheader-wrapper
 
