@@ -170,10 +170,10 @@ body{
             &:hover{
             span{
                 &::before{
-                    display: none;
+                    width: 30px;
                 }
                 &::after{
-                    display: none;
+                    width: 15px;
                 }
             }
             }
