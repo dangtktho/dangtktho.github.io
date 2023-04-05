@@ -4,11 +4,17 @@ $color_1:#f1bb18;
 $color_txt:#303030;
 
 //breakpointの登録
+ $point:1150px;
  $point-1:960px;
  $tablet-point:767px;
  $sp-point:500px;
 
  //mixinの登録
+ @mixin p{
+    @media(max-width:$point){
+        @content;
+    }
+ }
  @mixin p1{
     @media(max-width:$point-1){
         @content;
@@ -165,7 +171,7 @@ body{
             transform: rotate(90deg);
         }
     }
-    @include tab{
+    @include tb{
         #ham-btn{
             margin-left: 20px;
         }
@@ -421,14 +427,14 @@ body{
         width: 80%;
         li{
             width: 90%;        
-            margin: 20px auto;
+            margin: 10px auto;
             // background-color: #e64040;
             a{
                 font-size: 18px; 
             }
         }
     }
-}
+}//ここまでg-nav-sp
 
 //main-visual
 .main-visual{
@@ -538,7 +544,7 @@ h3{
     transform: matrix(1, 0, 0, 1, 0, 0);    
   }
     }
-@include p1{
+@include p{
     display: none;
 }
 
@@ -547,7 +553,7 @@ h3{
 
 .main-wrapper-sp{
     display: none;
-    @include p1{
+    @include p{
         display: block;
         width: 90%;
     margin: 100px auto;
@@ -562,7 +568,7 @@ a{
 h3{
     text-align: center;
 }
-.sub-slider-1{
+.sub-slider-1-sp{
     width: 90%;
     margin: 0 auto;
     // background-color: #a92c2c;
