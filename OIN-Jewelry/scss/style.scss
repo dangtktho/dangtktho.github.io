@@ -1060,7 +1060,7 @@ footer{
   left: 0;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
   }
   &:hover::before {
   transform: scaleX(1);
