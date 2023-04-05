@@ -1,10 +1,11 @@
 $(function(){
   //footer
-  
+
   //clickイベント
         $('#ham-btn').on('click',function(){
         $(this).toggleClass('is-active');
-        $('#g-nav').toggleClass('g-nav-shown');   
+        $('#g-nav').toggleClass('g-nav-shown'); 
+        $('#g-nav-sp').toggleClass('g-nav-shown-sp');
     });
 
   //scrollイベント
