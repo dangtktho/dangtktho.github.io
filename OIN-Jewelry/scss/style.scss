@@ -168,10 +168,14 @@ body{
     @include tb{
         #ham-btn{
             &:hover{
-            pointer-events: none;//hover無効にする！
+            span{
+                &::before{
+                    display: none;
+                }
+                &::after{
+                    display: none;
+                }
             }
-            &:active {
-                pointer-events: active;
             }
         }
     }
