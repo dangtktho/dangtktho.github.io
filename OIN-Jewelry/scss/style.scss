@@ -170,6 +170,9 @@ body{
             &:hover{
             pointer-events: none;//hover無効にする！
             }
+            &:active {
+                pointer-events: active;
+            }
         }
     }
 
