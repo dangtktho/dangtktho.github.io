@@ -172,8 +172,10 @@ body{
         }
     }
     @include tb{
-        #ham-btn{
+        .header-content{
+           #ham-btn{
             margin-left: 20px;
+        } 
         }
     }
 }//ここまでheader-wrapper
@@ -427,7 +429,7 @@ body{
         width: 80%;
         .nav-btn{
             li{
-            width: 90%;        
+            width: 60%;        
             margin: 10px auto;
             // background-color: #e64040;
             a{
