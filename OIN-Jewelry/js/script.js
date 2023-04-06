@@ -112,7 +112,7 @@ $(window).on('load', function () {
     {
       breakpoint: 1151,
       settings: {
-        infinite: true,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 3,
       }
@@ -120,13 +120,21 @@ $(window).on('load', function () {
     {
       breakpoint: 961,
       settings: {
-        infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         prevArrow: false,
         nextArrow: false,
+        // arrows: false,
         swipeToSlide: true,
         touchMove: true,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -136,22 +144,33 @@ $(window).on('load', function () {
   
         });
         $('.sub-slider-1-sp').slick({      
-          infinite: true,
+          infinite: false,
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           prevArrow: '<img src="img/left.svg" class="slick-arrow prev-arrow">',
           nextArrow: '<img src="img/right.svg" class="slick-arrow next-arrow">',
           responsive: [
           {
             breakpoint: 961,
             settings: {
-              infinite: true,
+              // centerMode: true,
+              // centerPadding: '0',
+              infinite: false,
+              // arrows: false,
               slidesToShow: 2,
               slidesToScroll: 1,
               prevArrow: false,
               nextArrow: false,
               swipeToSlide: true,
               touchMove: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
             }
           }
         ]

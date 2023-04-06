@@ -399,7 +399,7 @@ body{
     .nav-btn{
         width: 100%;
         height: 100%;
-        padding-top: 30px;
+        padding-top: 10px;
         // background-color: #143d9a;
         li{
             width: 50%;        
@@ -425,13 +425,16 @@ body{
      }
     @include sp{
         width: 80%;
-        li{
+        .nav-btn{
+            li{
             width: 90%;        
             margin: 10px auto;
             // background-color: #e64040;
             a{
                 font-size: 18px; 
             }
+        }
+        
         }
     }
 }//ここまでg-nav-sp
@@ -912,6 +915,21 @@ footer{
         }
     }
 }
+.sub-slider-1{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    }
+.sub-slider-1.slick-initialized{
+    opacity: 1;
+    }
+
+.sub-slider-1-sp{
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+.sub-slider-1-sp.slick-initialized{
+        opacity: 1;
+        }
 
 
 //earrings等のページ
