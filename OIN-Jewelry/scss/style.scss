@@ -1016,7 +1016,12 @@ footer{
         transform: matrix(1, 0, 0, 1, 0, 0);    
       }
         }
-}
+    @include p{
+        .item-wrapper{
+            width: 45%;
+        }
+    }
+}//ここまでearrings-wrapper
 
 //item-detailページ
 .container{
