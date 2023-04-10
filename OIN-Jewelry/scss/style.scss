@@ -1017,10 +1017,18 @@ footer{
       }
         }
     @include p{
+        gap: 40px;
         .item-wrapper{
             width: 45%;
         }
     }
+    @include sp{
+        gap: 20px;
+        // .item-wrapper{
+        //     width: 40%;
+        // }
+    }
+    
 }//ここまでearrings-wrapper
 
 //item-detailページ
