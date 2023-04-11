@@ -1165,10 +1165,27 @@ footer{
     }
 
 @include p1{
-    // .container{
-        
-    // }
-    
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    .dot-wrapper{
+        display: none;
+    }
+    .photo-wrapper{
+        width: 100%;
+    }
+     .content{
+        width: 100%;
+        margin: 0;
+     }
+}
+@include tb{
+    width: 90%;
+    .content{
+        .detail{
+            padding: 0;
+        }
+    }
 }
 }//ここまでcontainer
 
