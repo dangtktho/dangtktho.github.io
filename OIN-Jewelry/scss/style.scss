@@ -66,6 +66,9 @@ body{
             color: $color_txt; 
             margin: 0 auto;
             font-size: 14px;
+           &:hover{
+            text-decoration: underline;
+           } 
         }
     }
     .header-content{
@@ -1082,6 +1085,9 @@ footer{
             margin-bottom: 40px;
         }
     }
+    .photo-wrapper-sp{
+        display: none;
+    }
     .content{
         width: 40%;
         height: 110vh;
@@ -1168,12 +1174,27 @@ footer{
     display: block;
     width: 80%;
     margin: 0 auto;
+    .photo-wrapper{
+        display: none;
+    }
+    .photo-wrapper-sp{
+        display: block;
+        // width: 100%;
+        .slider-for{
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .slider-nav{
+            max-width: 600px;
+            margin: 30px auto 100px;
+        }
+    }
     .dot-wrapper{
         display: none;
     }
-    .photo-wrapper{
-        width: 100%;
-    }
+    // .photo-wrapper{
+    //     width: 100%;
+    // }
      .content{
         width: 100%;
         margin: 0;
@@ -1188,6 +1209,8 @@ footer{
     }
 }
 }//ここまでcontainer
+
+
 
 //contactページ
 .shop-wrapper{
