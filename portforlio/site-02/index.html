@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本の四季</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Outfit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+</head>
+<body class="pages">
+   <header>
+    <h2 class="banner-top">日本の四季</h2>
+    <p>ここにプロジェクト概要が入ります</p>
+   </header> 
+
+   <main>
+   <div class="main-visual">
+    <ul class="bxslider">
+        <li><img src="../img/top.jpg" alt=""></li>
+        <li><img src="../img/spring.jpg" alt=""></li>
+        <li><img src="../img/summer.jpg" alt=""></li>
+        <li><img src="../img/fall.jpg" alt=""></li>
+        <li><img src="../img/winter.jpg" alt=""></li>
+    </ul>
+   </div>
+   <div class="txt-box">
+    <h2>クライアントの要望</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa aut cumque a sunt consequatur minima officiis vero unde deserunt, ducimus quae, consequuntur consectetur repudiandae rem eveniet itaque tempora alias!</p>
+   </div>
+   <div class="txt-box">
+    <h2>システム要件</h2>
+    <ul>
+        <li>リスト１</li>
+        <li>リスト１</li>
+        <li>リスト１</li>
+        <li>リスト１</li>
+    </ul>
+   </div>
+   <div class="txt-box">
+    <h2>デザインコンセプト</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa aut cumque a sunt consequatur minima officiis vero unde deserunt, ducimus quae, consequuntur consectetur repudiandae rem eveniet itaque tempora alias!</p>
+   </div>
+
+   <p class="to-page"><a href="http://localhost:8888/season/" target="_blank">Visit Website</a></p>
+ </main>
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' integrity='sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==' crossorigin='anonymous'></script>
+
+<script src="../js/jquery.bxslider.js"></script>
+
+    <script>
+        $(function(){
+            $('.bxslider').bxSlider({
+                auto: true,
+                controls: false,
+                speed: 400,
+                mode: 'fade',
+            });
+        });
+    </script>
+</body>
+</html>

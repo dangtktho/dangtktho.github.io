@@ -1,0 +1,700 @@
+@charset "utf-8";
+
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search][type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted}[type=reset],[type=submit],button,html [type=button]button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}img{max-width: 100%;}
+
+/* Top page */
+body{
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* display: flex; */
+}
+.initial{
+    max-width: 1100px;
+    margin: 70px auto 0;
+    text-align: center;
+    /* background-color: #fff; */
+    /* overflow: hidden; */
+    /* transition: 0.4s; */
+}
+.initial>img{
+    width: 80px;
+    height: 80px;
+    /* background-image: linear-gradient(180deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%); */
+    /* position: relative; */
+}
+
+.initial:hover>img:nth-of-type(-n+5){
+    opacity: 0;
+    /* visibility: hidden; */
+}
+.initial:hover>img:nth-of-type(7){
+    opacity: 0;
+}
+.initial:hover>img:nth-of-type(8){
+    opacity: 0;
+}
+.initial:hover>img:nth-of-type(10){
+    opacity: 0;
+}
+.initial:hover>img:nth-of-type(11){
+    opacity: 0;
+}
+.initial:hover>img:nth-of-type(13){
+    opacity: 0;
+}
+.initial:hover>img:nth-of-type(14){
+    opacity: 0;
+}
+.initial:hover>img:nth-of-type(17){
+    opacity: 0;
+}
+.initial:hover>img:nth-of-type(19){
+    opacity: 0;
+}
+.initial:hover>img:nth-of-type(n+21){
+    opacity: 0;
+}
+
+
+.initial:hover>img:nth-of-type(4){
+    position: absolute;
+    opacity: 1;
+    top: 50px;
+    left: 465px;
+    /* perspective: 100px; */
+    animation: d 0.5s forwards;
+}
+@keyframes d {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(-105px,30px) scale(1.4)}
+    }
+
+.initial:hover>img:nth-of-type(1){
+    position: absolute;
+    opacity: 1;
+    top: 50px;
+    left: 240px;
+    /* perspective: 100px; */
+    animation: a 0.5s forwards;
+}
+@keyframes a {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(310px,30px) scale(1.4)}
+    } 
+
+.initial:hover>img:nth-of-type(13){
+    position: absolute;
+    opacity: 1;
+    top: 50px;
+    right: 240px;
+    /* perspective: 100px; */
+    animation: n 0.5s forwards;
+}
+@keyframes n {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(-380px,30px) scale(1.4)}
+    }
+
+.initial:hover>img:nth-of-type(7){
+    position: absolute;
+    opacity: 1;
+    top: 50px;
+    right: 685px;
+    /* perspective: 100px; */
+    animation: g 0.5s forwards;
+}
+@keyframes g {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(295px,30px) scale(1.4)}
+    }
+ 
+
+.initial::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 1000px;
+    margin: auto;
+    background: url(../img/alphabet/o-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+}
+.initial:hover::before{
+    display: block;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    visibility: visible;
+    top: 200px;
+    left: 0;
+    right: 510px;
+    margin: auto;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+/* .p{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background: url(../img/alphabet/p-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+} */
+
+/* .initial:hover>img:nth-of-type(16){
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 700px;
+    margin: auto;
+    transition: 0.4s;
+} */
+.initial:hover>img:nth-of-type(16){
+    position: absolute;
+    opacity: 1;
+    top: 125px;
+    left: 390px;
+    /* perspective: 100px; */
+    animation: p 0.5s forwards;
+}
+@keyframes p {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(-45px,75px)}
+    } 
+
+/* .initial:hover>img:nth-of-type(18){
+    position: absolute;
+    opacity: 1;
+    top: 100px;
+    left: 0;
+    right: 330px;
+    margin: auto;
+    transition: 0.4s;
+} */
+.initial:hover>img:nth-of-type(18){
+    position: absolute;
+    opacity: 1;
+    top: 125px;
+    left: 535px;
+    animation: r 0.5s forwards;
+}
+@keyframes r {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(-25px,75px)}
+    }   
+
+/* .initial:hover>img:nth-of-type(20){
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 170px;
+    margin: auto;
+    transition: 0.4s;
+} */
+.initial:hover>img:nth-of-type(20){
+    position: absolute;
+    opacity: 1;
+    top: 125px;
+    left: 685px;
+    animation: t 0.5s forwards;
+}
+@keyframes t {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(-95px,75px)}
+    }
+
+/* .initial:hover>img:nth-of-type(6){
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 0.4s;
+} */
+.initial:hover>img:nth-of-type(6){
+    position: absolute;
+    opacity: 1;
+    top: 50px;
+    left: 610px;
+    animation: f 0.5s forwards;
+}
+@keyframes f {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(60px,150px)}
+    }
+
+/* .initial:hover>img:nth-of-type(15){
+    position: absolute;
+    top: 100px
+    left: 170px;
+    right: 0;
+    margin: auto;
+    transition: 0.4s;
+} */
+.initial:hover>img:nth-of-type(15){
+    position: absolute;
+    opacity: 1;
+    top: 125px;
+    left: 315px;
+    animation: o 0.5s forwards;
+}
+@keyframes o {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(435px,75px)}
+    }
+
+/* .initial:hover>img:nth-of-type(12){
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    right: 0;
+    margin: auto;
+    transition: 0.4s;
+} */
+.initial:hover>img:nth-of-type(12){
+    position: absolute;
+    opacity: 1;
+    top: 50px;
+    right: 315px;
+    animation: l 0.5s forwards;
+}
+@keyframes l {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(-220px,150px)}
+    }
+
+/* .initial:hover>img:nth-of-type(9){
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 510px;
+    right: 0;
+    margin: auto;
+    opacity: 1;
+    transition: 0.4s;
+} */
+.initial:hover>img:nth-of-type(9){
+    position: absolute;
+    opacity: 1;
+    top: 50px;
+    right: 535px;
+    animation: i 0.5s forwards;
+}
+@keyframes i {
+    /* 0%{transform:translate(0,0)} */
+    to{transform:translate(75px,150px)}
+    }
+
+.initial::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    right: 0;
+    margin: auto;
+    background: url(../img/alphabet/o-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+}
+.initial:hover::after{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    width: 80px;
+    height: 80px;
+    top: 200px;
+    left: 600px;
+    right: 0;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+
+
+.about{
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid #ff0;
+    /* border-radius: 10%; */
+    position: absolute;
+    top: 312px;
+    left: 0;
+    right: 500px;
+    bottom: 0;
+    margin: auto;
+    transition: 0.5s;
+    /* overflow: hidden; */
+}
+
+.about:hover{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background-color: #e4de27;
+    font-size: 26px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.about:hover .initial>img:nth-of-type(1){
+    opacity: 0;
+    visibility: hidden;
+}
+.works{
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid #ff0;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: -400px;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    transition: 0.5s;
+    /* overflow: hidden; */
+}
+.works:hover{
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    background-color: #e4de27;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+    border-radius: 0;
+}
+
+.a::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -430px;
+    left: -245px;
+    background: url(../img/alphabet/a-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.about:hover>.a::after{
+    content:'';
+    top: -110px;
+    left: -110px;
+    opacity: 1;
+    visibility: visible;
+}
+ .b::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -430px;
+    left: -160px;
+    background: url(../img/alphabet/b-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.about:hover>.b::after{
+    content:'';
+    top: -110px;
+    left: -40px;
+    opacity: 1;
+    visibility: visible;
+}
+.o::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -345px;
+    left: -160px;
+    background: url(../img/alphabet/o-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.about:hover>.o::after{
+    content:'';
+    top: -110px;
+    left: 35px;
+    opacity: 1;
+    visibility: visible;
+    /* transition: 0.5; */
+}
+.u::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -345px;
+    left: 345px;
+    background: url(../img/alphabet/u-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.about:hover>.u::after{
+    content:'';
+    top: -110px;
+    left: 115px;
+    opacity: 1;
+    visibility: visible;
+}
+.t::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -345px;
+    left: 260px;
+    background: url(../img/alphabet/t-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.about:hover>.t::after{
+    content:'';
+    top: -110px;
+    left: 190px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.w::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -340px;
+    left: 60px;
+    background: url(../img/alphabet/w-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.works:hover>.w::after{
+    content:'';
+    top: -110px;
+    left: -105px;
+    opacity: 1;
+    visibility: visible;
+}
+.oo::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -340px;
+    left: -610px;
+    background: url(../img/alphabet/o-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.works:hover>.oo::after{
+    content:'';
+    top: -110px;
+    left: -20px;
+    opacity: 1;
+    visibility: visible;
+}
+.r::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -340px;
+    left: -360px;
+    background: url(../img/alphabet/r-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.works:hover>.r::after{
+    content:'';
+    top: -110px;
+    left: 55px;
+    opacity: 1;
+    visibility: visible;
+}
+.k::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -425px;
+    left: 145px;
+    background: url(../img/alphabet/k-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.works:hover>.k::after{
+    content:'';
+    top: -110px;
+    left: 125px;
+    opacity: 1;
+    visibility: visible;
+}
+.s::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -340px;
+    left: -275px;
+    background: url(../img/alphabet/s-solid.svg) no-repeat center center/contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.works:hover>.s::after{
+    content:'';
+    top: -110px;
+    left: 190px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* aboutページ */
+/*========= ナビゲーションのためのCSS ===============*/
+
+/*アクティブになったエリア*/
+#g-nav.panelactive{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+	top: 0;
+	width:100%;
+    height: 100vh;
+}
+
+/*丸の拡大*/
+.circle-bg{
+    position: fixed;
+	z-index:3;
+    /*丸の形*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #ff0;
+    /*丸のスタート位置と形状*/
+	transform: scale(0);/*scaleをはじめは0に*/
+    top:calc(72% - 50px);/*50%から円の半径を引いた値*/
+    left:calc(33% - 50px);/*50%から円の半径を引いた値*/
+    transition: all .6s;/*0.6秒かけてアニメーション*/
+}
+
+.circle-bg.circleactive{
+	transform: scale(50);/*クラスが付与されたらscaleを拡大*/
+    /* background-image: linear-gradient(180deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%); */
+    background-color: #333;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav-list{
+    display: none;/*はじめは表示なし*/
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#g-nav.panelactive #g-nav-list{
+     display: block; /*クラスが付与されたら出現*/
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+	opacity: 0;/*はじめは透過0*/
+    /*ナビゲーション天地中央揃え※レイアウトによって調整してください。不必要なら削除*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*背景が出現後にナビゲーションを表示*/
+#g-nav.panelactive ul {
+    opacity:1;
+}
+
+/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
+#g-nav.panelactive ul li{
+animation-name:gnaviAnime;
+animation-duration:1s;
+animation-delay:.2s;/*0.2 秒遅らせて出現*/
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes gnaviAnime{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+/*リストのレイアウト設定*/
+#g-nav li{
+	text-align: center; 
+	list-style: none;
+}
+
+#g-nav a{
+	color: #fff;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+    text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+/* ここまでaboutページ */
+
