@@ -1217,7 +1217,7 @@ footer{
     h2{
         font-size: 32px;
         text-align: center;
-        margin: 100px 0 50px;
+        margin: 100px auto 50px;
     }
 .store{
     width: 80%;
@@ -1227,7 +1227,7 @@ footer{
     .map{
         margin: 0 auto;
         // width: 50%;
-        width: 400px;
+        width: 500px;
         height: 300px;
         .g-map{
             width: 100%;
@@ -1239,12 +1239,34 @@ footer{
         }
     }
     .address{
+        margin: 0 auto;
+        padding: 0 0 0 50px;
         width: 50%;
+        h3{
+            font-size: 22px;
+        }
     }
-    // @include sp{
-    //     margin-top: 150px;
-    // }
+    
 }
+@include p1{
+    .store{
+        display: block;
+        width: 90%;
+     .map{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 30px;
+    } 
+    .address{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }  
+    }
+    
+        
+    }
+
 }
 .contact{
     h2{
