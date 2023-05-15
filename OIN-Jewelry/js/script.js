@@ -1,6 +1,7 @@
 $(function(){
   //footer
-
+  let fullYear = new Date().getFullYear();
+  $('#this-year').text(fullYear);
   //clickイベント
         $('#ham-btn').on('click',function(){
         $(this).toggleClass('is-active');
