@@ -768,10 +768,25 @@ opacity: 1;
         line-height: 70px;
         font-size: 20px;
     }
+    .to-about:hover{
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 20px;
+        border-radius: 0;
+    }
     .to-works{
         width: 80px;
         height: 80px;
         line-height: 80px;
         font-size: 20px;
     }
+    .to-works:hover{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 20px;
+        border-radius: 50%;
+    }
+
 }

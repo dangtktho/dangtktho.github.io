@@ -73,7 +73,8 @@ main{
         }
 
         .cd-timeline{
-            max-width: 70%;
+            max-width: 66%;
+            padding: 20px;
             margin: 0 auto;
         }
         .cd-timeline__img--picture{
@@ -84,7 +85,11 @@ main{
 
             height: 30px;
         }
-        
+        .skills{
+            max-width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+        }
         .skills h2{
             font-size: 46px;
             font-weight: bold;
@@ -92,7 +97,7 @@ main{
             margin-bottom: 50px;
         }
         .skill-1{
-            max-width: 66%;
+            max-width: 100%;
             margin: 0 auto 30px;
             display: flex;
             gap: 0 20px;
@@ -128,5 +133,5 @@ main{
 
 /* responsive */
 @media (max-width:800px){
-
+     
 }
