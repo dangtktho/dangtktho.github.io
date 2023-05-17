@@ -737,14 +737,27 @@ opacity: 1;
         height: 100px;
         line-height: 100px;
         font-size: 26px;
+        border-radius: 0;
         background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    }
+    .to-about:hover{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 26px;
     }
     .to-works{
         width: 110px;
         height: 110px;
         line-height: 110px;
         font-size: 26px;
+        border-radius: 50%;
         background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    }
+    .to-works:hover{
+        width: 130px;
+        height: 130px;
+        line-height: 130px;
     }
 }
 @media (max-width:500px){
