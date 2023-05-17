@@ -5,8 +5,9 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{backgr
 /* Top page */
 body{
     background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    font-family: 'Noto Sans JP', sans-serif;
 }
-header.button{
+.button{
     display: none;
 }
 main{
@@ -313,7 +314,7 @@ main{
     background-color: #e4de27;
     font-size: 26px;
     color: #000;
-    font-weight: bold;
+    /* font-weight: bold; */
     border-radius: 50%;
 }
 .about:hover .initial>img:nth-of-type(1){
@@ -345,7 +346,7 @@ main{
     line-height: 130px;
     background-color: #e4de27;
     font-size: 26px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #000;
     border-radius: 0;
 }
@@ -661,7 +662,7 @@ opacity: 1;
         display: none;
     }
     main{
-        background: url(../img/top-sp1.png) no-repeat center center/50%;
+        background: url(../img/top-sp1.png) no-repeat center center/90%;
     }
     .about{
         display: none;
@@ -669,20 +670,20 @@ opacity: 1;
     .works{
         display: none;
     }
-    header.button{
+    .button{
         display: block;
     }
     .to-about{
         display: block;
-        width: 64px;
-        height: 64px;
+        width: 100px;
+        height: 100px;
         /* border-radius: 50%; */
         text-align: center;
-        line-height: 64px;
+        line-height: 100px;
         font-size: 16px;
         font-weight: bold;
         position: absolute;
-        top: 40%;
+        top: 50%;
         right: 20%;
         left: 0;
         bottom: 0;
@@ -695,16 +696,16 @@ opacity: 1;
 
     .to-works{
         display: block;
-        width: 70px;
-        height: 70px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
         text-align: center;
         /* padding: 20px; */
-        line-height: 70px;
+        line-height: 110px;
         font-size: 16px;
         font-weight: bold;
         position: absolute;
-        top: 40%;
+        top: 50%;
         right: 0;
         left: 20%;
         bottom: 0;
