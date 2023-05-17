@@ -10,7 +10,7 @@ main{
 }
         .about h1{ 
         text-align: center;
-        margin: 50px auto 30px;
+        margin: 100px auto 30px;
         font-size: 50px;
         font-weight: bold;
         font-family: 'Outfit', sans-serif;
@@ -128,5 +128,5 @@ main{
 
 /* responsive */
 @media (max-width:800px){
-    
+
 }
