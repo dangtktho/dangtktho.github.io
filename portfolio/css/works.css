@@ -326,3 +326,10 @@ h1{
     color: #000;
     text-align: center;
 }
+
+/* responsive */
+@media (max-width:800px){
+}
+
+@media (max-width:500px){
+}

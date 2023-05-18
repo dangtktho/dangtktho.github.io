@@ -657,6 +657,12 @@ opacity: 1;
 }
 /* ここまでaboutページ */
 
+/* footer */
+footer{
+    padding: 50px;
+    color: #fff;
+}
+
 /* responsive */
 @media (max-width:1080px){
     .initial{
@@ -791,8 +797,3 @@ opacity: 1;
 
 }
 
-/* footer */
-footer{
-    padding: 50px;
-    color: #fff;
-}

@@ -150,6 +150,13 @@ main{
             text-align: center;
         }
 
+/* footer */
+.contact{
+    padding: 50px;
+    color: #000;
+    text-align: center;
+}
+
 /* responsive */
 @media (max-width:800px){
     /* .profile{
@@ -312,10 +319,4 @@ main{
     .skill-box .icon{
         width: 82px;
     }
-}
-/* footer */
-.contact{
-    padding: 50px;
-    color: #000;
-    text-align: center;
 }
