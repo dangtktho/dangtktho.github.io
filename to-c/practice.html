@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      
+        .wrapper{
+            width: 420px;
+            margin: 0 auto;
+        }
+        .box{
+            width: 190px;
+            height: 190px;
+            background-color: rgb(226, 226, 43);
+            float: left;
+            margin: 10px;/* floatの時はmarginが加算されるので、余白を20pxにしたかったら、margin: 10px;にする */
+        }
+        .box:nth-of-type(1){
+            width: 190px;
+            height: 400px;
+            background-color: blueviolet;
+
+        }
+        /* .box:nth-of-type(2){
+            width: 190px;
+            height: 190px;
+            background-color: rgb(226, 43, 223);
+        } */
+
+    </style>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>to-Cサイトの作成</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<header>
+<h1>Sneaker World</h1>
+<p class="tag-line">スニーカー愛好家のための聖域</p>
+<p class="logo">ロゴ</p>
+</header>
+
+<div class="circle">
+    <img src="img/circle.svg" alt="">
+</div>
+
+<nav class="pc-nav">
+<ul>
+<li><a href="#top">トップ</a></li>
+<li><a href="#item">アイテム</a></li>
+<li><a href="#shop">ショップについて</a></li>
+<li><a href="#faq">よくある質問</a></li>
+<li><a href="#staff">ご挨拶</a></li>
+<li class="slide"></li>
+</ul>
+</nav><!-- /.pc-nav -->
+
+<div class="container">
+    <input type="checkbox" id="ham-btn">
+    <label for="ham-btn" class="circle-btn">
+        <span class="ham-bar"></span>
+    </label>
+<nav class="sp-nav">
+    <ul>
+        <li><a href="#top">トップ</a></li>
+        <li><a href="#item">アイテム</a></li>
+        <li><a href="#shop">ショップについて</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#staff">ご挨拶</a></li>
+        <li><a href="ここに英語ページのURL" target="_blank" >to English</a></li>
+        </ul>
+</nav><!-- /.sp-nav -->
+<div class="main-visual">
+    <p><img src="img/01.jpg" alt=""></p>
+    <p><img src="img/03.jpg" alt=""></p>
+</div><!-- /.main-visual -->
+<div class="main-copy">
+
+</div><!-- /.main-copy -->
+
+<section id="item">
+<h2>アイテム</h2>
+<div class="grid-wrapper">
+    <div class="grid-box">
+        <h3 class="item-name">商品名1</h3>
+        <p class="item-photo"><img src="img/product-01.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+    <div class="grid-box">
+        <h3 class="item-name">商品名2</h3>
+        <p class="item-photo"><img src="img/product-02.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+    <div class="grid-box">
+        <h3 class="item-name">商品名3</h3>
+        <p class="item-photo"><img src="img/product-03.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+    <div class="grid-box">
+        <h3 class="item-name">商品名4</h3>
+        <p class="item-photo"><img src="img/product-04.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+    <div class="grid-box">
+        <h3 class="item-name">商品名5</h3>
+        <p class="item-photo"><img src="img/product-05.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+    <div class="grid-box">
+        <h3 class="item-name">商品名6</h3>
+        <p class="item-photo"><img src="img/product-06.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+    <div class="grid-box">
+        <h3 class="item-name">商品名7</h3>
+        <p class="item-photo"><img src="img/product-08.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+    <div class="grid-box">
+        <h3 class="item-name">商品名8</h3>
+        <p class="item-photo"><img src="img/product-07.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+    <div class="grid-box">
+        <h3 class="item-name">商品名9</h3>
+        <p class="item-photo"><img src="img/product-09.jpeg" alt=""></p>
+        <p class="price">10000円</p>
+    </div><!-- /.grid-box -->
+</div><!-- /.grid-wrapper -->
+</section>
+
+<section id="shop">
+<h2>ショップについて</h2>
+</section>
+
+<section id="faq">
+<h2>よくある質問</h2>
+</section>
+
+<section id="staff">
+<h2>ご挨拶</h2>
+</section>
+<footer></footer>
+</div><!-- /.container -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js' integrity='sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==' crossorigin='anonymous'></script>
+
+<script>
+//jqueryで.sp-nav a をクリックしたら、.sp-navを閉じる
+$('.sp-nav a').on('click',function(){
+    $('#ham-btn').prop('checked',false);
+});
+</script>
+</body>
+</html>
