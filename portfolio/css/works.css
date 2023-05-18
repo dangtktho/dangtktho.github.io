@@ -232,7 +232,7 @@ h1{
         width: 100%;
         height: 100%;
         border-color: #FF1361;
-        border-image: linear-gradient(to right, #FF1361 0%, #ffd000 100%);
+        border-image: linear-gradient(to right, #231557 0%, #44107A 5%, #FF1361 67%, #ffd000 100%);
         border-image-slice: 1;
         transition: width .2s ease, height .2s .2s ease;
     }
