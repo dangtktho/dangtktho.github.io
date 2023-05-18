@@ -39,14 +39,16 @@ main{
             font-weight: bold;
             top: 20px;
             right: 130px;
-            background-color: #5f5d5d;
-            color: #fff;
+            /* background-color: #5f5d5d; */
+            border: 1px solid #222;
+            color: #222;
             transition: 0.2s;
         }
         .to-top:hover{
             background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
             border-radius: 50%;
-            
+            border: none;
+            color: #fff;
         }
         .to-works{
             display: block;
@@ -61,13 +63,16 @@ main{
             font-weight: bold;
             top: 20px;
             right: 50px;
-            background-color: #5f5d5d;
-            color: #fff;
+            /* background-color: #5f5d5d; */
+            border: 1px solid #222;
+            color: #222;
             transition: 0.2s;
         }
         .to-works:hover{
             background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
             border-radius: 0;
+            border: none;
+            color: #fff;
             
         }
         .profile{
