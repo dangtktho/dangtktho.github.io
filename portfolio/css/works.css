@@ -305,10 +305,17 @@ h1{
         font-weight: bold;
     }
     .responsive{
-        padding: 20px 10px 50px;
+        margin: 20px 10px 50px;
     }
     video {
         max-width: 100%;/* はみ出ないように */
         padding: 20px 10px 50px;
       }
     
+
+/* footer */
+.contact{
+    padding: 50px;
+    color: #000;
+    text-align: center;
+}
