@@ -342,8 +342,11 @@ overflow-x: hidden;
         margin: 0 auto;
         padding: 10px;
     }
-    #ham-btn,.circle-btn,.sp-nav{
+    .circle-btn,.sp-nav{
         display: block;
+    }
+    #ham-btn{
+        display: none;
     }
     .circle-btn{
         position: fixed;
